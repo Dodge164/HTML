@@ -37,9 +37,17 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 
 body {
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #333333;  
+    }
+    
 h1 {
     font-size: 30px;
     line-height: 1;
@@ -101,5 +109,4 @@ h3 {
     text-shadow: 0.5px 0.9px 1px black;
 }
 
-    
     
