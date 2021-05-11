@@ -1,0 +1,118 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body{
+	padding: 30px;
+	background-color:#e8e8e8;
+	font-family: Arial;
+	font-size: 20px;
+	
+	}
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 2.86;
+		letter-spacing: 2.8px;
+		text-align: left;
+		color: #000000;
+		}
+
+.text {
+	font-size: 18px;
+	margin-left: 30px;
+	font-size: 18px;
+	color: #000000;
+	line-height: 30px;
+}
+.text p:nth-child(1) {
+	margin-bottom: 30px;
+}
+
+.text p:nth-child(1):first-line{
+	color: red;
+	}
+
+.text p:nth-child(2):first-letter{
+	color: red;
+	font-size: 30px;
+}
+
+.list {}
+
+.list li:before{
+	content: '';
+	background: url('../img/icons/li.svg') left no-repeat;
+	width: 20px;
+	height: 20px;
+	margin: 0 10px 0 0; 
+	display: inline-block;
+}
+.list li{
+	margin-bottom: 15px;
+	padding: 0px 0px 0px 35px;
+}
+
+.list li:nth-child(1){
+	text-decoration: line-through;
+}
+.list li:nth-child(2){
+	font-weight: 700;
+}
+.list li:nth-child(3){
+	font-style: oblique;
+}
+.list li:nth-child(4){
+	text-transform: uppercase;
+	margin-bottom: 65px;
+}
+.list li:nth-child(6):hover{
+	color: #d55a5a;
+	}
+	.list li:last-child{
+		margin: 0;
+	}
+
+	.textbutton {
+		height: 44px;
+		display: inline-block;
+		line-height: 44px;
+		padding: 0 30px;
+		background-color: #80b7b3;
+		margin: 137px 0 118px 50px;
+		border-radius: 24px;
+		color: #ffffff;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 2.8px;
+	}
+
+	.textbutton:after{
+		content: '';
+		background: url('../img/arrow.svg') right no-repeat;
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+	}
+
+	
+	.textbutton:hover{
+		background-color: #3a5856;
+	}
+	.textbutton:active{
+		background-color:#818181;
+	}
