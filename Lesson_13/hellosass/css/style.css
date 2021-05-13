@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus, :activate {
   outline: none;
 }
 
@@ -28,7 +28,7 @@ html, body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
+  font-size: 14 px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -38,7 +38,7 @@ input, button, textarea {
   font-family: inherit;
 }
 
-input::-ms-clear {
+input::-ms-clearclear {
   display: none;
 }
 
@@ -46,7 +46,7 @@ button {
   cursor: pointer;
 }
 
-button::-moz-focus-inner {
+button ::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
@@ -69,8 +69,47 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
-  font-weight: inherit;
+  font-weight: 400;
 }
 
-/*--------------------*/
-/*# sourceMappingURL=nullstyle.css.map */
+.link, .link-2 {
+  font-size: 100px;
+  border-bottom: 5px dashed  red;
+}
+
+.block {
+  width: 31.25%;
+  background-color: grey;
+  padding: 30px;
+  line-height: 60px;
+}
+
+.block .block__text {
+  font-size: 100px;
+}
+
+.block .block__text span {
+  color: green;
+}
+
+.link {
+  font-size: 80px;
+  color: green;
+  color: #000;
+  text-decoration: underline;
+  font-size: 100px;
+}
+
+.block .link {
+  font-size: 100px;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.link-2 {
+  font-size: 50px;
+  color: green;
+  border-bottom: 5px dashed  #000;
+}
