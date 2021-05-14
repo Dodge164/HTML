@@ -1,0 +1,249 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@mixin anim($time,$delay){-webkit-transition: all $time ease $delay;-moz-inline-flex:all $time ease $delay; -ms-inline-flex:all $time ease $delay;-o-inline-flex:all $time ease $delay;}
+@mixin flexbox(){display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;font-size: 0;}
+@mixin flexboxinline(){display: -webkit-inline-flex;display: -moz-inline-flex;display: -ms-inline-flex; display: -o-inline-flex;display: inline-flex;}
+
+
+.wrapper{width: 100%;min-height: 100%;overflow: hidden;
+@include flexbox();
+flex-direction: column;
+&.loader{}
+}
+
+
+body {
+	font-family: Lato;
+}
+
+
+.mainblock {
+	flex: 1 1 auto;
+	position: relative;
+	@include flexbox();
+	justify-content: center;
+	//align-items: center;
+	text-align: center;
+	padding: 50px 0;
+	@media screen and (max-width:$md3+px) , screen and (max-height: 600px) {
+		padding: 20px 0;
+	}
+
+		&__content {
+			position: relative;
+			z-index: 1;
+			flex: 1 1 auto;
+			.container{
+				height: 100%;
+				@include flexbox();
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+			}
+			
+		}
+		&__logo {}
+		&__text {
+			color: #ffffff;
+			position: relative;
+			padding: 0px 0px 45px 0px;
+			margin: 30px 0;
+			&:after{
+				content:'';
+				width: 105px;
+				height: 2px;
+				background-color: white;
+				position: absolute;
+				left: 50%;
+				margin: 0px 0px 0px -52.5px;
+				bottom: 0;				
+			}
+		}
+		&__title {
+			font-weight: 900;
+			font-size: 34px;
+			line-height: 40px;
+			text-transform: uppercase;
+			letter-spacing: 5.43px;
+			margin: 0px 0px 10px 0px;
+			@media screen and (max-width:$md3+px) , screen and (max-height: 600px) {
+				font-size: 25px;
+				line-height: 30px;
+			}
+		}
+		&__subtitle {
+			font-size: 26px;
+			font-weight: 400;
+			letter-spacing: 4.15px;
+		}
+		&__footer {
+			@include flexboxinline();
+			flex-direction: column;
+		}
+		&__btn {
+			margin: 0px 0px 60px 0px;
+		}
+		&__arrow {
+			position: relative;
+			animation: arrow 2s infinite ease;
+			-webkit-animation: 2s infinite ease;
+			-moz-animation: 2s infinite ease;
+			-o-animation: 2s infinite ease;
+		}
+		&__image {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+}
+
+@keyframes arrow{
+	0%{top: 0;}
+	50%{top: 20px;}
+	100%{top: 0;}
+}
+
+@-webkit-keyframes arrow{
+	0%{}
+	50%{}
+	100%{}
+}
+@-moz-keyframes arrow{
+	0%{}
+	50%{}
+	100%{}
+}
+@-o-keyframes arrow{
+	0%{}
+	50%{}
+	100%{}
+}
+.container {
+}
+.btn {
+	display: inline-block;
+	padding: 0px 42px;
+	height: 47px;
+	line-height: 44px;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 0.67px;
+	&_w {
+		color: #fff;
+		border: 1px solid #fff;
+	}
+	&hover{}
+	&.fw{width: 100%;}
+		
+}
+
+
+
+
+
+
+.about {
+	&__body {
+		max-width: 1100px;
+		margin: 0px auto;
+	}
+	&__header {
+		margin: 0px 0px 65px 0px;
+	}
+	&__title {
+		margin: 0px 0px 30px 0px;
+	}
+	&__text {
+max-width: 688px;
+color: #868585;
+font-size: 14px;
+font-weight: 300;
+text-align: center;
+line-height: 25.89px;
+margin: 0px auto;
+	}
+	&__row {
+display: flex;
+font-size: 0;
+margin: 0px -15px;
+}
+	&__column {
+	padding: 0px 15px;
+	flex: 0 0 33.333%;
+	}
+}
+.title {
+	font-size: 34px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 8.95px;
+	position: relative;
+	text-align: center;
+	padding: 0px 0px 30px 0px;
+	&:after{
+		content:'';
+		position: absolute;
+		width: 70px;
+		bottom: 0;
+		height: 1px;
+		left: 50%;
+		background-color: #000;
+		margin: 0px 0px 0px -40px;
+	}
+}
+.item-about {
+	&__icon {
+		margin: 0px auto 40px auto;
+		border-radius: 50%;
+		width: 92px;
+		height: 92px;
+		border: 2px solid #f1f1f1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__title {
+		text-align: center;
+		color: #000000;
+		font-size: 22px;
+		text-transform: uppercase;
+		letter-spacing: 3.52px;
+		margin: 0px 0px 35px 0px;
+	}
+	&__text {
+		text-align: center;
+		color: #868585;
+		line-height: 26px;
+		font-weight: 300;
+		font-size: 14px;
+	}
+}
+
+
+.portfolio {
+	&__body {
+		max-width: 823px;
+		margin: 202px auto;
+	}
+	&__header {
+		margin: 0px 0px 65px 0px;
+	}
+	&__title {
+		margin: 0px 0px 30px 0px;
+	}
+	&__menu {}
+	&__row {}
+	&__column {}
+}
+
+.menu {
+	&__item {
+		&_active {}
+	}
+}
+.item-portfolio {
+
+}
