@@ -141,7 +141,7 @@ body {
 }
 
 .mainblock__text:after {
-  content: '';
+  content: "";
   width: 105px;
   height: 2px;
   background-color: white;
@@ -179,12 +179,45 @@ body {
           flex-direction: column;
 }
 
+.mainblock__btn {
+  margin: 0px 0px 60px 0px;
+}
+
+.mainblock__arrow {
+  position: relative;
+  animation: arrow 2s infinite ease;
+  -webkit-animation: 2s infinite ease;
+  -moz-animation: 2s infinite ease;
+  -o-animation: 2s infinite ease;
+}
+
 .mainblock__image {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+}
+
+@keyframes arrow {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes arrow {
+  0% {
+  }
+  50% {
+  }
+  100% {
+  }
 }
 
 .btn {
@@ -255,7 +288,7 @@ body {
 }
 
 .title:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 70px;
   bottom: 0;
@@ -299,15 +332,65 @@ body {
   font-size: 14px;
 }
 
+.portfolio {
+  margin-top: 105px;
+  background-color: #c9c7c7;
+}
+
 .portfolio__body {
-  max-width: 823px;
-  margin: 202px auto;
+  max-width: 1100px;
+  margin: 0px auto;
 }
 
 .portfolio__header {
-  margin: 0px 0px 65px 0px;
+  padding: 107px 0 0 0;
 }
 
-.portfolio__title {
-  margin: 0px 0px 30px 0px;
+.portfolio__nav {
+  width: 294px;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+}
+
+.portfolio__item {
+  padding: 0 16px;
+}
+
+.portfolio__row {
+  margin-top: 136px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio__column {
+  margin-bottom: 16px;
+  height: 365px;
+  width: 508px;
+  background-color: greenyellow;
+}
+
+.portfolio__column:nth-child(odd) {
+  margin-right: 27px;
+}
+
+.portfolio__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 182px;
+  border: 1px solid #000;
+  height: 47px;
 }
