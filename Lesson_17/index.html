@@ -1,0 +1,247 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+  <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+  <head>
+    <!-- Заголовок страницы в браузере -->
+    <title>Методология БЭМ</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Кодировка страницы -->
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  </head>
+  <!-- Отображаемое тело страницы -->
+  <body>
+    <!-- Оболочка всей страницы -->
+    <div class="wrapper">
+      <!-- Содержит все три блока: Hi, What, Flex, Vertical -->
+      <div class="content">
+        <!--Первый блок (Привет, друг! и Картинка)-->
+        <div class="hi">
+          <!-- Контейнер для первого блока -->
+          <div class="container">
+            <!-- Содержимое контейнера (Текст + Картинка) -->
+            <div class="hi__row">
+              <!-- Содержимое контейнера ROW (часть с текстом) -->
+              <div class="hi__body">
+                <div class="hi__title">Привет, друг!</div>
+                <ul class="hi__list">
+                  <li>У тебя все получится!</li>
+                  <li>Никогда не сдавайся!</li>
+                  <li>Сегодня ты уже знаешь больше чем вчера!</li>
+                  <li>Спасибо тебе за поддержку!</li>
+                </ul>
+              </div>
+              <div class="hi__image">
+                <!-- Содержимое контейнера ROW (часть с картинкой) -->
+                <img src="./img/Main_img.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Второй блок (Блок What: схема и текст)-->
+        <div class="what">
+          <!-- Контейнер для второго блока -->
+          <div class="container">
+            <!-- Содержимое контейнера второго блока (схема + текст) -->
+            <div class="what__row">
+              <!-- Содержимое контейнера второго блока (часть с картинкой) -->
+              <div class="what__image">
+                <img src="./img/schema.jpg" alt="" />
+              </div>
+              <!-- Содержимое контейнера второго блока (часть с текстом) -->
+              <div class="what__body">
+                <div class="what__title title">Что такое FlexBox?</div>
+                <div class="what__text">
+                  <p>
+                    Flexbox - это целый модуль, содержащий в себе набор свойств
+                    и их значений как для родителя flex-контейнера так и для его
+                    дочерних элементов flex-элементов.
+                  </p>
+                  <p>
+                    Основным преимуществом гибкой FLEX разметки является
+                    возможность изменять ширину/высоту пространство вокруг и
+                    порядок flex-элементов, для того чтобы наилучшим образом
+                    заполнить доступное пространство flex-контейнера
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Третий блок (Четыре флекса)-->
+        <div class="columns">
+          <!-- Контейнер для третьего блока -->
+          <div class="container">
+            <div class="columns__title title">Колонки с flex-контейнерами</div>
+            <!-- Главный flex-контейнер третьего блока (для всего содержимого) -->
+            <div class="columns__row">
+              <!-- Содержимое контейнера третьего блока (для 4-х флекс-боксов) -->
+              <div class="columns__column">
+                <!-- содержимое одного flex-блока (solid-картинка, заголовок и текст - 4 шт???)-->
+                <div class="columns__item item">
+                  <!--Содержимое контейнера одного из flex-боксов (чтобы применился flex)-->
+                  <div class="item__row">
+                    <div class="item__image">
+                      <img src="./img/image-solid.jpg" alt="" />
+                    </div>
+                    <div class="item__body">
+                      <div class="item__title">
+                        The description for the image
+                      </div>
+                      <div class="item__text">
+                        Pariatur iure ab sunt nesciunt, quibusdam odio iste
+                        cumque itaque, ipsa vel exercitationem ullam quos aut
+                        nostrum cupiditate fuga quaerat quam animi dolores.
+                        Sequi itaque, unde perferendis nemo debitis dolor.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="columns__column">
+                <!-- содержимое одного flex-блока (solid-картинка, заголовок и текст - 4 шт???)-->
+                <div class="columns__item item">
+                  <!--Содержимое контейнера одного из flex-боксов (чтобы применился flex)-->
+                  <div class="item__row">
+                    <div class="item__image">
+                      <img src="./img/image-solid.jpg" alt="" />
+                    </div>
+                    <div class="item__body">
+                      <div class="item__title">
+                        The description for the image
+                      </div>
+                      <div class="item__text">
+                        Pariatur iure ab sunt nesciunt, quibusdam odio iste
+                        cumque itaque, ipsa vel exercitationem ullam quos aut
+                        nostrum cupiditate fuga quaerat quam animi dolores.
+                        Sequi itaque, unde perferendis nemo debitis dolor.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="columns__column">
+                <!-- содержимое одного flex-блока (solid-картинка, заголовок и текст - 4 шт???)-->
+                <div class="columns__item item">
+                  <!--Содержимое контейнера одного из flex-боксов (чтобы применился flex)-->
+                  <div class="item__row">
+                    <div class="item__image">
+                      <img src="./img/image-solid.jpg" alt="" />
+                    </div>
+                    <div class="item__body">
+                      <div class="item__title">
+                        The description for the image
+                      </div>
+                      <div class="item__text">
+                        Pariatur iure ab sunt nesciunt, quibusdam odio iste
+                        cumque itaque, ipsa vel exercitationem ullam quos aut
+                        nostrum cupiditate fuga quaerat quam animi dolores.
+                        Sequi itaque, unde perferendis nemo debitis dolor.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="columns__column">
+                <!-- содержимое одного flex-блока (solid-картинка, заголовок и текст - 4 шт???)-->
+                <div class="columns__item item">
+                  <!--Содержимое контейнера одного из flex-боксов (чтобы применился flex)-->
+                  <div class="item__row">
+                    <div class="item__image">
+                      <img src="./img/image-solid.jpg" alt="" />
+                    </div>
+                    <div class="item__body">
+                      <div class="item__title">
+                        The description for the image
+                      </div>
+                      <div class="item__text">
+                        Pariatur iure ab sunt nesciunt, quibusdam odio iste
+                        cumque itaque, ipsa vel exercitationem ullam quos aut
+                        nostrum cupiditate fuga quaerat quam animi dolores.
+                        Sequi itaque, unde perferendis nemo debitis dolor.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vertical">
+          <div class="container">
+            <div class="vertical__title title">Вертикальное выравнивание</div>
+            <div class="vertical__body">
+              <div class="vertical__row">
+                <div class="vertical__column">
+                  <div class="vertical__item">
+                    <div class="vertical__sutitle">Буду рад</div>
+                    <div class="vertical__label">подписке</div>
+                    <div class="vertical__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Sint tenetur fugit vel, eligendi illum, placeat quo vero
+                      reiciendis consectetur.
+                    </div>
+                    <div class="vertical__btn">подписаться</div>
+                  </div>
+                </div>
+
+                <div class="vertical__column">
+                  <div class="vertical__item">
+                    <div class="vertical__sutitle">Буду рад</div>
+                    <div class="vertical__label">лайку</div>
+                    <div class="vertical__text">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Sint tenetur fugit vel, eligendi illum, placeat
+                        quo vero reiciendis consectetur voluptatibus atque et
+                        itaque, hic, deleniti. Sunt commodi tempora voluptatum
+                        dolorum.
+                      </p>
+                      
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Sint tenetur fugit vel, eligendi illum, placeat
+                        quo vero reiciendis consectetur tempora voluptatum
+                        dolorum.
+                      </p>
+                    </div>
+                    <div class="vertical__btn">лайк</div>
+                  </div>
+                </div>
+                <div class="vertical__column">
+                  <div class="vertical__item">
+                    <div class="vertical__sutitle">Буду рад</div>
+                    <div class="vertical__label">комментарию</div>
+                    <div class="vertical__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                      commodo viverra maecenas accumsan lacus vel facilisis.
+                    </div>
+                    <div class="vertical__btn">комментировать</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Блок футера-->
+      <footer class="footer">
+        <!--Контейнер для футера-->
+        <div class="container">
+          <!--Содержимое контейнера footer (чтобы применился flex)-->
+          <div class="footer__row">
+            <div class="footer__text">Фрилансер по жизни 2019</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
