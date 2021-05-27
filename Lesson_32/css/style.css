@@ -1,0 +1,138 @@
+/*Обнуление*/
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	background-color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+}
+a {
+	color: #794f45;
+}
+h1 {
+	font-size: 40px;
+	line-height: 1;
+	margin: 0px 0px 50px 0px;
+}
+h2 {
+	font-size: 30px;
+	line-height: 1;
+	margin: 0px 0px 20px 0px;
+}
+ul {
+	list-style: none;
+}
+/* ================ */
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center;
+	align-items: center; */
+}
+
+.full-screen {
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	flex-direction:column;
+	
+}
+.full-screen__body {
+	padding: 50px 15px;
+	background-color: rgba(0, 0, 0, 0.459);
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex: 1 1 auto;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+	text-transform: uppercase;
+}
+.full-screen__title {
+	font-size: 50px;
+	letter-spacing: 25px;
+	font-weight: 700;
+	margin: 0 0 20px 0;
+
+}
+.full-screen__text {
+	font-size: 18px;
+	letter-spacing: 15px;
+}
+.full-screen__video {
+	position: absolute;
+	/* position: fixed; */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.content {
+	/* position: relative;
+	z-index: 5; */
+	background-color: #794f45;
+}
+.content__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 15px;
+	font-size: 18px;
+	line-height: 150%;
+}
+.content__container p{
+margin: 0 0 20px 0;
+}
+
+
+
+
+
+.items {
+	padding: 50px 0;
+}
+.items__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.items__body {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)) ;
+}
+.item {}
+.item__video {
+	position: relative;
+	margin: 0 0 15px 0;
+	padding: 0 0 50% 0;
+	/* aspect-ratio: 16 / 9; */
+}
+.item__video video,
+.item__video iframe {
+	position: absolute; 
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.item__text {
+	font-size: 18px;
+	line-height: 150%;
+}
